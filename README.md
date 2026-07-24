@@ -72,7 +72,7 @@ docker compose up --build
 ```bash
 curl -i -X POST http://localhost:8000/api/v1/tickets \
   -H 'Content-Type: application/json' \
-  -H 'X-API-Key: local-dev-api-key-12345' \
+  -H 'X-API-Key: super-secret-api-key' \
   -H 'Idempotency-Key: 8b0e01d2-2ff0-4dcb-8f9a-7f0c1b5c1a10' \
   -d '{
     "user_id": "0f7d1a3c-1a8e-4a3d-8ea9-8b0e01d20000",
