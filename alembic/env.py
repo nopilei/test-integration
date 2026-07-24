@@ -8,7 +8,11 @@ from sqlalchemy.ext.asyncio import async_engine_from_config
 
 from backend.config import settings
 from backend.db.base import Base
-from backend.db.models import OutboxEvent, Ticket  # noqa: F401  (register metadata)
+from backend.db.models import (
+    OutboxEvent,
+    ProcessedProviderMessage,
+    Ticket,
+)
 
 config = context.config
 

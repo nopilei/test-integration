@@ -47,6 +47,7 @@ class Settings(BaseSettings):
     reconciler_poll_interval_sec: float = 15.0
     reconciler_batch_size: int = 100
     ticket_recommendation_timeout_sec: int = 30
+    inbox_retention_days: int = 7
 
     monolith_mock_error_rate: float = 0.05
     monolith_mock_time_multiplier: float = 1

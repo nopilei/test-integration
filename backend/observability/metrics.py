@@ -39,6 +39,13 @@ ticket_state_transition_total = Counter(
     registry=REGISTRY,
 )
 
+provider_inbound_duplicates_total = Counter(
+    "provider_inbound_duplicates_total",
+    "Inbound provider messages skipped as duplicates by message_id.",
+    labelnames=("message_type",),
+    registry=REGISTRY,
+)
+
 ticket_stuck_recovered_total = Counter(
     "ticket_stuck_recovered_total",
     "Tickets picked up by the reconciler and progressed.",
